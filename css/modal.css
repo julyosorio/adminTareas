@@ -1,0 +1,56 @@
+#miVentana{
+	position: fixed; 
+	width: 350px; 
+	height: auto;
+	top: 0; 
+	left: 0;
+	padding: 20px; 
+	font-family: 'Arial', cursive;
+	border: #7a7fde 2px solid;
+	background-color: #FAFAFA; 
+	color: #000000; 
+	display:none;
+}
+#xcerrar{
+	font-size: 30px;
+	text-align: right;
+}
+#nuevaTarea{
+	color: #4e4d52;
+}
+#nuevaTarea h2{
+	margin-bottom: 10px;
+	text-align: left;
+	margin-bottom: 20px;
+	color: #4e4d52;
+	border-left:2px solid #7a7fde;
+	padding-left: 10px;
+}
+#nuevaTarea input{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 10px;
+}
+#responsables{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#responsables option:hover{
+	background-color: #9ea8ec;
+}
+#nuevaTarea button{
+	display: block;
+	margin-top: 50px;
+	width: 100%;
+    background-color: #9ea8ec;
+    color:#292828;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

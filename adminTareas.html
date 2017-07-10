@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width= device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<title>Administrador de Tareas</title>
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/estilo2.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/modalDetalle.css">
+</head>
+<body>
+	<header>
+        <div class="contenedor">       
+            <input type="checkbox" id="menu1">
+            <label  class="icon-menu" for="menu1"></label>
+            <nav class="menu">
+                <a href="adminTareas.html">Tareas Pendientes</a>
+                <a href="tareasFinalizadas.html">Tareas Finalizadas</a>
+                <a href="index.html">Cerrar Sesión</a>
+            </nav>
+        </div>
+    </header>
+ 
+	<section class="contenedor" id="banner">
+		<h1>TAREAS PENDIENTES</h1>
+		<input type="text" id="campoBuscar" placeholder="Buscar">
+		<button class="icon-search"></button>
+	</section>
+
+	<section class="contenedor">
+		<div id="cuerpo">
+		</div>		
+	</section>
+
+	<section class="contenedor" id="agregarTareas">
+		<button type="button" class="icon-plus" id= "btnNuevaTarea" onclick="mostrarVentana()"></button>
+	</section>
+
+	<div id="miVentana">
+		<form action="" name="nuevaTarea"id="nuevaTarea">
+			<h2>Nueva Tarea</h2>
+			<label>Nombre de la Tarea</label>
+			<input type="text" id="nombreTarea" placeholder="Nombre de la Tarea">
+			<label>Descripcion de la Tarea</label>
+			<input type="text" id="descripcion" placeholder="Descripcion">
+			<label>Responsables de la Tarea</label>
+			<select name="responsables[]" id="responsables" multiple="multiple" size="2">
+				<option value="ana">Ana</option>
+				<option value="juan">Juan</option>
+				<option value="maria">Maria</option>
+				<option value="pepe">Pepe</option>
+			</select>
+			<label>Fecha de finalizacion de la Tarea</label>
+			<input type="date" id="fecha" placeholder="Fecha de Finalizacion">
+			<button type="button" id= "btnAgregarTarea">Agregar</button>
+		</form>	
+	</div>
+
+	<div id="miVentanaDetalle">
+		<form action="" name="detalle"id="detalle">
+			<div id="contenedor-detalle"></div>							
+			<button type="button" id= "btnCerrar" onclick="cerrarVentana()">Cerrar</button>
+			<button type="button" id= "btnFinalizar" onclick="finalizarTarea()">Finalizar</button>		 
+		</form>	
+	</div>
+
+	<script type="text/javascript" >
+	 	function mostrarVentana()
+		{
+		    var ventana = document.getElementById("miVentana");
+		    ventana.style.marginTop = "100px";
+		    ventana.style.left = ((document.body.clientWidth-350) / 2) +  "px";
+		    ventana.style.display = 'block';
+		}
+	</script>
+	<script type="text/javascript" >
+	    function cerrarVentana()
+		{
+		   	var ventanaC = document.getElementById("miVentanaDetalle");
+				ventanaC.style.display = 'none';
+		}
+	</script>
+	<script type="text/javascript" src="js/guardarTarea.js"></script>
+	<script type="text/javascript" src="js/verTareas.js"></script>  
+
+</body>
+</html>

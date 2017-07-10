@@ -1,0 +1,50 @@
+#cuerpo {
+	overflow-y: scroll;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Arial';
+	margin: auto;
+
+}
+
+.tarea{
+	width: 50%;
+	background: #CED8F6;
+	overflow-x:hidden;
+	color: #2E2E2E;
+	font-style:bold;
+	border: #FFF 5px solid;
+    padding:10px;
+    display:inline-block;
+}
+.tarea input[type="button"]{
+	width: 78%;
+	padding: 10px;
+	cursor: pointer;
+	background: #7a7fde;
+    border:none;
+    border-radius:5px; 
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FFF;
+
+}
+.tarea label{
+	 display:block;
+}
+
+@media (min-width:1024px){
+	#cuerpo{
+		width: 50%;
+		margin: auto;
+	}
+
+	.tarea{
+	width: 50%;
+	}
+
+	
+
+}
+
+

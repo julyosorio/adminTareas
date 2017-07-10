@@ -1,0 +1,32 @@
+#miVentanaDetalle{
+	position: fixed; 
+	width: 350px; 
+	top: 0; 
+	left: 0;
+	padding: 20px; 
+	font-family: 'Arial', cursive;
+	border: #7a7fde 2px solid;
+	background-color: #FAFAFA; 
+	color: #000000; 
+	display:none;
+}
+#detalle{
+	color: #4e4d52;
+}
+
+
+#detalle button{
+	display: block;
+	width: 100%;
+	margin: 5px;
+    background-color: #9ea8ec;
+    color:#292828;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#contenedor-detalle{
+	text-align: center;
+}

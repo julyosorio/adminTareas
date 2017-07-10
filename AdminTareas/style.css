@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'AdminTareas';
+  src:  url('fonts/AdminTareas.eot?u9js37');
+  src:  url('fonts/AdminTareas.eot?u9js37#iefix') format('embedded-opentype'),
+    url('fonts/AdminTareas.ttf?u9js37') format('truetype'),
+    url('fonts/AdminTareas.woff?u9js37') format('woff'),
+    url('fonts/AdminTareas.svg?u9js37#AdminTareas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'AdminTareas' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
